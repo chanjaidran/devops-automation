@@ -1,4 +1,3 @@
-CMD chmod 666 /var/run/docker.sock
 FROM openjdk:8
 CMD chmod 666 /var/run/docker.sock
 EXPOSE 8080
