@@ -1,4 +1,6 @@
-FROM jenkins/jenkins::lts-jdk11
+CMD chmod 666 /var/run/docker.sock
+FROM openjdk:11
+CMD chmod 666 /var/run/docker.sock
 EXPOSE 8080
 ADD target/devops-integration.jar devops-integration.jar
 ENTRYPOINT ["java","-jar","/devops-integration.jar"]
