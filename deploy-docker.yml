@@ -1,0 +1,12 @@
+---
+- hosts: localhost
+  become: true
+  tasks:
+    - name: install Python pip
+      yum:
+        name: python-pip
+        state: present
+    - name: install docker Python module
+      pip:
+        name: docker-py
+        state: present
