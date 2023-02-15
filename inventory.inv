@@ -1,1 +1,2 @@
+[apache]
 localhost ansible_host=localhost ansible_user=jai ansible_pass=Jai123@C ansible_connection=local
